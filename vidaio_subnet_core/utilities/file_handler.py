@@ -35,7 +35,7 @@ def _generate_filename(url: str) -> str:
     return os.path.join("tmp", str(uuid.uuid4()))
 
 
-async def download_video(url: str) -> tuple[str, float, str]:
+async def download_video(url: str) -> str:
     """Download file using hf_transfer."""
     debug_start_time = time.time()
     try:
